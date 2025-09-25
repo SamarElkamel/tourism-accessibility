@@ -1,0 +1,263 @@
+{
+    "global_accessibility": 100.0,
+    "par_code_postal": {
+        "75 015": {
+            "total": 7,
+            "accessible": 7,
+            "proportion_accessible": 100.0
+        },
+        "75 016": {
+            "total": 3,
+            "accessible": 3,
+            "proportion_accessible": 100.0
+        },
+        "92 000": {
+            "total": 3,
+            "accessible": 3,
+            "proportion_accessible": 100.0
+        },
+        "75 008": {
+            "total": 12,
+            "accessible": 12,
+            "proportion_accessible": 100.0
+        },
+        "75 014": {
+            "total": 6,
+            "accessible": 6,
+            "proportion_accessible": 100.0
+        },
+        "75 004": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "75 003": {
+            "total": 2,
+            "accessible": 2,
+            "proportion_accessible": 100.0
+        },
+        "75 019": {
+            "total": 2,
+            "accessible": 2,
+            "proportion_accessible": 100.0
+        },
+        "75 010": {
+            "total": 5,
+            "accessible": 5,
+            "proportion_accessible": 100.0
+        },
+        "75 018": {
+            "total": 2,
+            "accessible": 2,
+            "proportion_accessible": 100.0
+        },
+        "75 009": {
+            "total": 4,
+            "accessible": 4,
+            "proportion_accessible": 100.0
+        },
+        "94 310": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "75 006": {
+            "total": 4,
+            "accessible": 4,
+            "proportion_accessible": 100.0
+        },
+        "75 001": {
+            "total": 3,
+            "accessible": 3,
+            "proportion_accessible": 100.0
+        },
+        "92 230": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "94 220": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "75 020": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "75 012": {
+            "total": 3,
+            "accessible": 3,
+            "proportion_accessible": 100.0
+        },
+        "93 500": {
+            "total": 2,
+            "accessible": 2,
+            "proportion_accessible": 100.0
+        },
+        "75 105": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "95 700": {
+            "total": 3,
+            "accessible": 3,
+            "proportion_accessible": 100.0
+        },
+        "92 110": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "94 150": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "75 017": {
+            "total": 3,
+            "accessible": 3,
+            "proportion_accessible": 100.0
+        },
+        "75 002": {
+            "total": 2,
+            "accessible": 2,
+            "proportion_accessible": 100.0
+        },
+        "94 110": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "94 270": {
+            "total": 2,
+            "accessible": 2,
+            "proportion_accessible": 100.0
+        },
+        "94 000": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "92 800": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "77 990": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "75 116": {
+            "total": 2,
+            "accessible": 2,
+            "proportion_accessible": 100.0
+        },
+        "92 240": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "93 400": {
+            "total": 2,
+            "accessible": 2,
+            "proportion_accessible": 100.0
+        },
+        "93 150": {
+            "total": 2,
+            "accessible": 2,
+            "proportion_accessible": 100.0
+        },
+        "75 011": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "93 200": {
+            "total": 4,
+            "accessible": 4,
+            "proportion_accessible": 100.0
+        },
+        "75 013": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "92 170": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "94 200": {
+            "total": 2,
+            "accessible": 2,
+            "proportion_accessible": 100.0
+        },
+        "94 120": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "93 170": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "93 210": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        },
+        "92 210": {
+            "total": 1,
+            "accessible": 1,
+            "proportion_accessible": 100.0
+        }
+    },
+    "top_5_communes": [
+        [
+            "Paris",
+            {
+                "total": 65,
+                "accessible": 65,
+                "proportion_accessible": 100.0
+            }
+        ],
+        [
+            "Nanterre",
+            {
+                "total": 3,
+                "accessible": 3,
+                "proportion_accessible": 100.0
+            }
+        ],
+        [
+            "Orly",
+            {
+                "total": 1,
+                "accessible": 1,
+                "proportion_accessible": 100.0
+            }
+        ],
+        [
+            "Gennevilliers",
+            {
+                "total": 1,
+                "accessible": 1,
+                "proportion_accessible": 100.0
+            }
+        ],
+        [
+            "Charenton-le-Pont",
+            {
+                "total": 1,
+                "accessible": 1,
+                "proportion_accessible": 100.0
+            }
+        ]
+    ],
+    "communes_faible_accessibilite": {}
+}
