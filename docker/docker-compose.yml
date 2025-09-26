@@ -30,8 +30,7 @@ services:
     depends_on:
       db:
         condition: service_healthy
-    command: >
-      sh -c "python etl/load_data_mysql.py && python etl/prepare_for_viz.py"
+    command: ./scripts/run_etl.sh
     networks:
       - app-network
   app:
