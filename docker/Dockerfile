@@ -1,15 +1,13 @@
-FROM python:3.11-slim
+FROM python:3.12-slim
+
+RUN pip install --no-cache-dir mysql-connector-python requests
 
 WORKDIR /app
 
-COPY requirements.txt /app/requirements.txt
+COPY etl/ ./etl
+COPY dataviz/ ./dataviz
 
-RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+COPY scripts/run_etl.sh ./scripts/run_etl.sh
+RUN chmod +x ./scripts/run_etl.sh
 
-
-COPY . /app
-
-EXPOSE 8000
-
-CMD ["python", "etl/load_data_mysql.py"]
+CMD ["./scripts/run_etl.sh"]
