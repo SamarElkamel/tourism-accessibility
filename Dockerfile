@@ -1,8 +1,9 @@
 FROM python:3.12-slim
 
-RUN pip install --no-cache-dir mysql-connector-python requests
-
 WORKDIR /app
+
+COPY docker/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY etl/ ./etl
 COPY dataviz/ ./dataviz
