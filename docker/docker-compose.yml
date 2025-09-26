@@ -1,4 +1,5 @@
 version: '3.9'
+
 services:
   db:
     image: mysql:8.0
@@ -11,7 +12,7 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-temporary_root_password}
     volumes:
       - db_data:/var/lib/mysql
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 10s
@@ -19,6 +20,7 @@ services:
       retries: 5
     networks:
       - app-network
+
   etl:
     build:
       context: ..
@@ -29,12 +31,14 @@ services:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_HOST: db
     depends_on:
       db:
         condition: service_healthy
     command: ./scripts/run_etl.sh
     networks:
       - app-network
+
   app:
     build:
       context: ..
@@ -45,6 +49,7 @@ services:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_HOST: db
       PORT: ${PORT}
     depends_on:
       db:
@@ -54,8 +59,10 @@ services:
     command: python -m http.server ${PORT} --directory dataviz
     networks:
       - app-network
+
 volumes:
   db_data:
+
 networks:
   app-network:
     driver: bridge
