@@ -3,4 +3,3 @@ __pycache__/
 *.pyc
 dataviz/data_for_viz.json
 Jenkinsfile
-docker/Dockerfile
