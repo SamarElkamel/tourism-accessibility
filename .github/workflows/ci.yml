@@ -19,6 +19,11 @@ jobs:
       - name: Build Docker image
         run: docker build -t tourism-app .
       - name: Run ETL and tests
+        env:
+          MYSQL_DATABASE: tourismdb
+          MYSQL_USER: appuser
+          MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
+          PORT: 8000
         run: |
           docker-compose -f docker/docker-compose.yml up -d db
           docker-compose -f docker/docker-compose.yml run etl
