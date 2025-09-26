@@ -26,7 +26,7 @@
     fetch("data_for_viz.json")
       .then(response => response.json())
       .then(data => {
-        // --- Global chart ---
+       
         const globalCtx = document.getElementById('globalChart').getContext('2d');
         new Chart(globalCtx, {
           type: 'doughnut',
@@ -39,7 +39,7 @@
           }
         });
 
-        // --- Code postal chart ---
+
         const cpLabels = Object.keys(data.par_code_postal);
         const cpValues = Object.values(data.par_code_postal).map(d => d.total);
 
@@ -63,7 +63,7 @@
           }
         });
 
-        // --- Top 5 communes ---
+
         const communesLabels = data.top_5_communes.map(c => c[0]);
         const communesValues = data.top_5_communes.map(c => c[1].proportion_accessible);
 
