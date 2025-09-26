@@ -4,7 +4,7 @@ import json
 import os
 
 conn = mysql.connector.connect(
-    host=os.getenv("MYSQL_HOST", "localhost"),
+    host=os.getenv("MYSQL_HOST", "db"),
     user=os.getenv("MYSQL_USER", "root"),
     password=os.getenv("MYSQL_PASSWORD", ""),
     database=os.getenv("MYSQL_DATABASE", "tourismdb")
