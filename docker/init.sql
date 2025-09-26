@@ -1,8 +1,3 @@
--- init.sql
-CREATE USER IF NOT EXISTS 'appuser'@'%' IDENTIFIED BY 'apppassword';
-GRANT ALL PRIVILEGES ON tourismdb.* TO 'appuser'@'%';
-FLUSH PRIVILEGES;
-
 CREATE DATABASE IF NOT EXISTS tourismdb;
 USE tourismdb;
 
@@ -17,3 +12,7 @@ CREATE TABLE IF NOT EXISTS hebergements (
     longitude DOUBLE,
     source JSON
 );
+
+CREATE USER IF NOT EXISTS 'appuser'@'%' IDENTIFIED BY 'apppassword';
+GRANT ALL PRIVILEGES ON tourismdb.* TO 'appuser'@'%';
+FLUSH PRIVILEGES;
