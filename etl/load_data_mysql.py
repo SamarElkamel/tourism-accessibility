@@ -15,7 +15,7 @@ url = "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/accessibilite
 response = requests.get(url).json()
 
 for record in response['results']:
-    # Les champs principaux
+
     nom = record.get('etablissement', None)
     adresse = record.get('adresse', None)
     commune = record.get('ville', None)
@@ -23,11 +23,11 @@ for record in response['results']:
     latitude = record.get('latitude', None)
     longitude = record.get('longitude', None)
 
-    # Accessibilité PMR
+  
     chambres_adaptees = record.get('chambres_adapees', [])
     accessibilite = "Oui" if chambres_adaptees else "Non"
 
-    # JSON complet comme source
+    
     source = json.dumps(record, ensure_ascii=False)
 
     cursor.execute("""
